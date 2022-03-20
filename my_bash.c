@@ -43,8 +43,62 @@ int check_command(char *arg)
 	return 0;
 }
 
+//void onCtrlC(int sig) {
+//	printf("OUCH! - I got signal %d\n", sig);
+//	(void)signal(SIGINT, SIG_DFL);
+//}
+//
+//void myfunc(int sig)
+//{
+//	putstr_fd("\b\bbye boddy:(", 2);
+//	(void)sig;
+//	kill(getppid(), SIGALRM);
+//	(void)signal(SIGINT, SIG_DFL);
+//	exit(0);
+//}
+//static int din = 0;
+//
+//void ding(int sig)
+//{
+//	(void)sig;
+//	din = 1;
+//	signal(SIGALRM, SIG_DFL);
+//}
+
 int	main(int argc, char **argv, char **envp)
 {
+//	(void)signal(SIGINT, onCtrlC);
+//	while(1) {
+//		printf("Hello World!\n");
+//		sleep(1);
+//	}
+//	return 1;
+
+//	pid_t pid = fork();
+//	if (pid == -1)
+//		exit(1);
+//	if (pid == 0)
+//	{
+//		int i = 0;
+//		while (i++ < 5)
+//		{
+//			putstr_fd("HELLO\n", 2);
+//			sleep(1);
+//		}
+//		putstr_fd("It's all, i'm dead\n", 2);
+//		kill(getppid(), SIGALRM);
+//		exit(0);
+//	}
+//	else
+//	{
+//		signal(SIGALRM, ding);
+//		pause();
+//		if (din == 1)
+//			putstr_fd("yeeeee\n", 2);
+//		else
+//			putstr_fd("noo(\n", 2);
+//	}
+//	return 1;
 	(void)envp;
 	if (argc != 2) {
 		putstr_fd("Error. Wrong number of arguments\n", 2);

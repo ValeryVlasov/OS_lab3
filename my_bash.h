@@ -7,6 +7,6 @@
 #include <stdlib.h>//exit
 #include <string.h>//strcat, strlen..
 #include <errno.h>//errno
-
+#include <signal.h>
 
 #endif
